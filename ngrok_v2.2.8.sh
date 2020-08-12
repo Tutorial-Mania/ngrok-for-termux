@@ -7,7 +7,9 @@ if [[ -e ngrok-2.2.8-linux-arm.zip ]]; then
 unzip ngrok-2.2.8-linux-arm.zip
 chmod +x ngrok
 rm -rf ngrok-2.2.8-linux-arm.zip
+cp ngrok $HOME
+chmod +x ngrok
 else
-printf "\e[1;93m[!] Download error... Termux, run:\e[0m\e[1;77m pkg install wget\e[0>
+printf "\e[1;93m[!] Download error... Termux, run:\e[0m\e[1;77m pkg install wget\e[0m\n"
 exit 1
 fi
