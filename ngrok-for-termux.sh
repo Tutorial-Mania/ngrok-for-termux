@@ -18,14 +18,14 @@ if [[ $op == 1 ]]; then
 
 if [[ -e ngrok-stable-linux-arm.zip ]]; then
 apt-get install unzip -y
-unzip ngrok-stable-linux-arm.zip -O stable ngrok/
+unzip ngrok-stable-linux-arm.zip -y
 chmod +x ngrok
 rm -rf ngrok-stable-linux-arm.zip
 echo "Done"
 elif [[ ! -e ngrok-2.2.8-linux-arm.zip ]]; then
 apt-get install wget -y
 wget https://bin.equinox.io/a/nmkK3DkqZEB/ngrok-stable-linux-arm.zip
-unzip ngrok-stable-linux-arm.zip
+unzip ngrok-stable-linux-arm.zip -y
 chmod +x ngrok
 rm -rf ngrok-stable-linux-arm.zip
 echo -e " \e[92m Done\e[97m"
@@ -38,14 +38,14 @@ elif [[ $op == 2 ]]; then
 
 if [[ -e ngrok-2.2.8-linux-arm.zip ]]; then
 apt-get install unzip -y
-unzip ngrok-2.2.8-linux-arm.zip
+unzip ngrok-2.2.8-linux-arm.zip -y
 chmod +x ngrok
 rm -rf ngrok-2.2.8-linux-arm.zip
 echo "Done"
 elif [[ ! -e ngrok-2.2.8-linux-arm.zip ]]; then
 apt-get install wget -y
 wget https://bin.equinox.io/a/nmkK3DkqZEB/ngrok-2.2.8-linux-arm.zip
-unzip ngrok-2.2.8-linux-arm.zip
+unzip ngrok-2.2.8-linux-arm.zip -y
 chmod +x ngrok
 rm -rf ngrok-2.2.8-linux-arm.zip
 echo -e " \e[92m Done\e[97m"
