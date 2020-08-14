@@ -28,7 +28,7 @@ wget https://bin.equinox.io/a/nmkK3DkqZEB/ngrok-stable-linux-arm.zip
 unzip ngrok-stable-linux-arm.zip
 chmod +x ngrok
 rm -rf ngrok-stable-linux-arm.zip
-echo "Done"
+echo " \e[92m Done\e[97m"
 else
 printf "\e[1;93m[!] Download error...\e[0m\e[1;77m Please cheack your internet connection.\e[0m\n"
 exit 1
@@ -48,7 +48,7 @@ wget https://bin.equinox.io/a/nmkK3DkqZEB/ngrok-2.2.8-linux-arm.zip
 unzip ngrok-2.2.8-linux-arm.zip
 chmod +x ngrok
 rm -rf ngrok-2.2.8-linux-arm.zip
-echo "Done"
+echo " \e[92m Done\e[97m"
 else
 printf "\e[1;93m[!] Download error...\e[0m\e[1;77m Please cheack your internet connection.\e[0m\n"
 exit 1
