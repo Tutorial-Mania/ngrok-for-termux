@@ -7,7 +7,9 @@ echo "╠═══════════════════════�
 echo "║   [1] - Download Ngrok Stable    ║"
 echo "║   [2] - Download Ngrok 2.2.8     ║"
 echo "╚══════════════════════════════════╝"
+
 read -p $"    Choose your option: " op
+
 if [[ $op == 1 ]]; then
 if [[ -e ngrok-stable-linux-arm.zip ]]; then
 apt-get install unzip -y
