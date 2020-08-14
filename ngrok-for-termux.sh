@@ -1,18 +1,18 @@
 #bin/bash
 echo ""
 echo "   ╔═════════════════════════════════════╗"
-echo "   ║          Ngrok for Termux           ║"
+echo -e "   ║         \e[92m Ngrok for Termux\e[97m           ║"
 echo "   ╠═════════════════════════════════════╣"
-echo "   ║     Developed by: Tutorial-Mania    ║"
+echo "   ║     Developed by:\e[96m Tutorial-Mania\e[97m    ║"
 echo "   ╠═════════════════════════════════════╣"
-echo "   ║ https://youtube.com/tutorialmaniabd ║"
+echo "   ║\e[31m https://youtube.com/tutorialmaniabd\e[97m ║"
 echo "   ╠═════════════════════════════════════╣"
 echo "   ║    [1] - Download Ngrok Stable      ║"
 echo "   ║    [2] - Download Ngrok 2.2.8       ║"
 echo "   ║    [0] - Exit                       ║"
 echo "   ╚═════════════════════════════════════╝"
 echo ""
-read -p $"   Enter your option: " op
+read -p $"      Enter your option: " op
 
 if [[ $op == 1 ]]; then
 
@@ -55,11 +55,14 @@ exit 1
 fi
 
 elif [[ $op -eq 0 ]]; then
+echo ""
 echo "   Bye Bye"
+echo ""
 exit 1
 
 else
 echo ""
-echo "   Invalid option!"
+echo "  \e[31m Invalid option!\e[97m"
+sleep 2
 bash ngrok-for-termux.sh
 fi
