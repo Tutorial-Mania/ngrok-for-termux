@@ -1,4 +1,5 @@
 #bin/bash
+clear
 echo ""
 echo "   ╔═════════════════════════════════════╗"
 echo -e "   ║         \e[92m Ngrok for Termux\e[97m           ║"
