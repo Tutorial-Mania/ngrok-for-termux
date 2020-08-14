@@ -12,7 +12,7 @@ echo "   ║    [2] - Download Ngrok 2.2.8       ║"
 echo "   ║    [0] - Exit                       ║"
 echo "   ╚═════════════════════════════════════╝"
 echo ""
-read -p $"      Enter your option: " op
+read -p $"          Enter your option: " op
 
 if [[ $op == 1 ]]; then
 
@@ -56,7 +56,7 @@ fi
 
 elif [[ $op -eq 0 ]]; then
 echo ""
-echo "   Bye Bye"
+echo "          Bye Bye"
 echo ""
 exit 1
 
