@@ -49,19 +49,17 @@ unzip ngrok-2.2.8-linux-arm.zip
 chmod +x ngrok
 rm -rf ngrok-2.2.8-linux-arm.zip
 echo "Done"
-
-elif [[ $op == 0 ]]; then
-echo "   Bye Bye"
-exit 1
-
 else
-
 printf "\e[1;93m[!] Download error... Termux, run:\e[0m\e[1;77m Please cheack your internet connection\e[0m\n"
 exit 1
 fi
 
+elif [[ $op -eq 0 ]]; then
+echo "   Bye Bye"
+exit 1
+
 else
 echo ""
 echo "   Invalid option!"
-echo ""
+bash ngrok-for-termux.sh
 fi
