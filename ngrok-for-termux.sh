@@ -18,7 +18,7 @@ if [[ $op == 1 ]]; then
 
 if [[ -e ngrok-stable-linux-arm.zip ]]; then
 apt-get install unzip -y
-unzip ngrok-stable-linux-arm.zip
+unzip ngrok-stable-linux-arm.zip -O stable ngrok/
 chmod +x ngrok
 rm -rf ngrok-stable-linux-arm.zip
 echo "Done"
@@ -34,7 +34,7 @@ printf "\e[1;93m[!] Download error... Termux, run:\e[0m\e[1;77m Please cheack yo
 exit 1
 fi
 
-elif [[$op == 2 ]]; then
+elif [[ $op == 2 ]]; then
 
 if [[ -e ngrok-2.2.8-linux-arm.zip ]]; then
 apt-get install unzip -y
@@ -50,7 +50,7 @@ chmod +x ngrok
 rm -rf ngrok-2.2.8-linux-arm.zip
 echo "Done"
 
-elif [[$op == 0 ]]; then
+elif [[ $op == 0 ]]; then
 echo "   Bye Bye"
 exit 1
 
