@@ -25,7 +25,7 @@ rm -rf ngrok-stable-linux-arm.zip
 echo "Done"
 elif [[ ! -e ngrok-2.2.8-linux-arm.zip ]]; then
 apt-get install wget -y
-wget https://bin.equinox.io/a/nmkK3DkqZEB/ngrok-stable-linux-arm.zip
+wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip
 unzip ngrok-stable-linux-arm.zip
 chmod +x ngrok
 rm -rf ngrok-stable-linux-arm.zip
