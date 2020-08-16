@@ -1,15 +1,18 @@
 #bin/bash
 clear
 echo ""
-echo "   ╔═════════════════════════════════════╗"
+echo -e "   ╔═════════════════════════════════════╗"
 echo -e "   ║         \e[92m Ngrok for Termux\e[97m           ║"
-echo "   ╠═════════════════════════════════════╣"
-echo -e "   ║     Developed by:\e[96m Tutorial-Mania\e[97m    ║"
-echo "   ╠═════════════════════════════════════╣"
-echo -e "   ║\e[31m https://youtube.com/tutorialmaniabd\e[97m ║"
-echo "   ╠═════════════════════════════════════╣"
+echo -e "   ╠══════════════════════════════════════╣"
+echo -e "   ║            Version - 1.0             ║"
+echo -e "   ╠══════════════════════════════════════╣"
+echo -e "   ║     Developed by:\e[96m Tutorial-Mania\e[97m     ║"
+echo -e "   ╠══════════════════════════════════════╣"
+echo -e "   ║\e[31m https://facebook.com/tutorialmaniabd\e[97m ║"
+echo -e "   ╠══════════════════════════════════════╣"
 echo "   ║    [1] - Download Ngrok Stable      ║"
 echo "   ║    [2] - Download Ngrok 2.2.8       ║"
+echo "   ║    [3] - Update                     ║"
 echo "   ║    [0] - Exit                       ║"
 echo "   ╚═════════════════════════════════════╝"
 echo ""
@@ -54,6 +57,19 @@ else
 printf "\e[1;93m[!] Download error...\e[0m\e[1;77m Please cheack your internet connection.\e[0m\n"
 exit 1
 fi
+
+elif [[ $op -eq 3 ]]; then
+echo ""
+echo -e "   \e[93m Updating...\e[0m"
+apt-get install git -y
+cd ..
+rm -rf ngrok-for-termux
+git clone https://github.com/Tutorial-Mania/ngrok-for-termux.git
+echo ""
+echo -e "   \e[32m Updated\e[0m"
+sleep 2
+clear
+exit 1
 
 elif [[ $op -eq 0 ]]; then
 echo ""
