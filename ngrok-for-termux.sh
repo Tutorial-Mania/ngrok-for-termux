@@ -75,6 +75,7 @@ elif [[ $op -eq 0 ]]; then
 echo ""
 echo "   Bye Bye"
 echo ""
+sleep 2
 clear
 exit 1
 
