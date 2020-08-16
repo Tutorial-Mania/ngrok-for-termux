@@ -69,6 +69,9 @@ echo ""
 echo -e "   \e[32m Updated\e[0m"
 sleep 2
 clear
+cd ..
+cd ngrok-for-termux
+bash ngrok-for-termux.sh
 exit 1
 
 elif [[ $op -eq 0 ]]; then
