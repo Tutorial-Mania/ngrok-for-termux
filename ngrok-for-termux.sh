@@ -10,11 +10,11 @@ echo -e "   ║     Developed by:\e[96m Tutorial-Mania\e[97m     ║"
 echo -e "   ╠══════════════════════════════════════╣"
 echo -e "   ║\e[31m https://facebook.com/tutorialmaniabd\e[97m ║"
 echo -e "   ╠══════════════════════════════════════╣"
-echo "   ║     [1] - Download Ngrok Stable      ║"
-echo "   ║     [2] - Download Ngrok 2.2.8       ║"
-echo "   ║     [3] - Update                     ║"
-echo "   ║     [0] - Exit                       ║"
-echo "   ╚══════════════════════════════════════╝"
+echo -e "   ║     [1] - Download Ngrok Stable      ║"
+echo -e "   ║     [2] - Download Ngrok 2.2.8       ║"
+echo -e "   ║     [3] - Update                     ║"
+echo -e "   ║     [0] - Exit                       ║"
+echo -e "   ╚══════════════════════════════════════╝"
 echo ""
 read -p $"   Enter your option: " op
 
@@ -75,6 +75,7 @@ elif [[ $op -eq 0 ]]; then
 echo ""
 echo "   Bye Bye"
 echo ""
+clear
 exit 1
 
 else
