@@ -73,7 +73,7 @@ exit 1
 
 elif [[ $op -eq 0 ]]; then
 echo ""
-echo "   Bye Bye"
+echo -e "   \e[96mBye Bye\e[0m"
 echo ""
 sleep 2
 clear
